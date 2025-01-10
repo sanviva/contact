@@ -3,32 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us - Sanviva</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Sanviva - Get in Touch</title>
 <style>
-    body { 
-        font-family: 'Montserrat', sans-serif; 
-        text-align: center; 
-        padding: 20px; 
-        background: linear-gradient(135deg, #a8edea 10%, #fed6e3 100%);
-    }
-    img { width: 30px; vertical-align: middle; }
-    .logo { width: 150px; margin-top: 20px; }
-    h1 { color: #333366; font-weight: 600; }
-    p { font-weight: 300; margin: 10px 0; }
-    .contact-info { margin-top: 20px; }
-    .contact-info p { font-size: 18px; color: #555; }
-    .contact-info a { color: #0000EE; text-decoration: none; font-weight: 400; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #005f73;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 24px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,1);
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100px;
+}
+
+.card h2 {
+  color: #005f73;
+}
+
+.card p {
+  color: #333;
+}
+
+.phone-number {
+  color: #d62828;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+a {
+  color: #0077b6;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #343a40;
+}
+
+footer a img {
+  width: 80px;
+}
 </style>
 </head>
 <body>
-    <img class="logo" src="https://cdn.jsdelivr.net/gh/sanviva/contact/Sanviva%20Logo.png" alt="Sanviva Logo">
-    <h1>Welcome to Sanviva</h1>
-    <p>Health and Beauty Products To Give Life</p>
-    <div class="contact-info">
-        <p><img src="https://cdn.jsdelivr.net/gh/sanviva/contact/phone%20logo.png" alt="Phone Logo"> Phone: +1-973-967-9710</p>
-        <p><img src="https://cdn.jsdelivr.net/gh/sanviva/contact/email%20logo.png" alt="Email Logo"> Email: <a href="mailto:gmakhija100@gmail.com">gmakhija100@gmail.com</a></p>
-        <p><img src="https://cdn.jsdelivr.net/gh/sanviva/contact/shopping%20cart%20logo.png" alt="Shopping Cart Logo"> Visit Our Shop: <a href="https://www.amway.com/myshop/sanviva" target="_blank">Sanviva Amway Shop</a></p>
-    </div>
+<header>
+  <h1>Get in touch</h1>
+  <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us.</p>
+</header>
+
+<div class="contact-container">
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/sanviva/contact/main/phone_logo.png" alt="Phone Icon">
+    <h2>Talk to Us</h2>
+    <p>Interested in Sanviva's products? Just pick up the phone to talk with us to place an order or get more details.</p>
+    <p class="phone-number">+1 973 967 9710</p>
+  </div>
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/sanviva/contact/main/email_logo.png" alt="Email Icon">
+    <h2>Contact Via Email</h2>
+    <p>Contact us via email. Click below to send an email directly to us.</p>
+    <a href="mailto:gmakhija100@gmail.com">Contact Support</a>
+  </div>
+</div>
+
+<footer>
+  <a href="http://www.amway.com/myshop/sanviva">Sanviva Shop<img src="https://raw.githubusercontent.com/sanviva/contact/main/shopping_cart_logo.png" alt="Shopping Cart Icon"></a>
+</footer>
+
 </body>
 </html>
