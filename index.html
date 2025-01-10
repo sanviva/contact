@@ -22,25 +22,20 @@ header {
 
 .logo-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Aligns items in a column */
+  align-items: center; /* Centers items horizontally */
   padding: 20px;
-  background-color: #005f73; /* Optional: adds a background color to the logo section */
+  background-color: #005f73; /* Maintains the background color */
 }
 
 .logo-container img {
-  height: 80px; /* Adjust according to your logo's aspect ratio */
+  height: 120px; /* Increased height */
 }
 
-.logo-container h2 {
-  margin-left: 10px;
-  color: #005f73;
-  font-size: 24px; /* Adjust according to your preference */
-}
-
-header h1 {
-  margin: 10px 0; /* Adjusted margin to accommodate logo */
-  font-size: 36px;
+.logo-container h1 {
+  color: #fff;
+  font-size: 36px; /* Ensures prominence */
+  margin: 10px 0 0; /* Adds space above the title */
 }
 
 header p {
@@ -59,7 +54,7 @@ header p {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,1);
   padding: 20px;
-  width: 60%;
+  width: 40%;
   text-align: center;
   margin-bottom: 20px;
 }
