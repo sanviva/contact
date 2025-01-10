@@ -20,8 +20,26 @@ header {
   padding: 20px 0;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff; /* Optional: adds a background color to the logo section */
+}
+
+.logo-container img {
+  height: 80px; /* Adjust according to your logo's aspect ratio */
+}
+
+.logo-container h2 {
+  margin-left: 10px;
+  color: #005f73;
+  font-size: 24px; /* Adjust according to your preference */
+}
+
 header h1 {
-  margin: 0;
+  margin: 10px 0; /* Adjusted margin to accommodate logo */
   font-size: 36px;
 }
 
@@ -86,6 +104,10 @@ footer a img {
 </style>
 </head>
 <body>
+<div class="logo-container">
+  <img src="https://raw.githubusercontent.com/sanviva/contact/main/sanviva_logo.png" alt="Sanviva Logo">
+  <h2>Sanviva</h2>
+</div>
 <header>
   <h1>Get in touch</h1>
   <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us.</p>
