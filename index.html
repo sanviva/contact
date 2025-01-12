@@ -23,12 +23,12 @@ body {
 
 .logo-text {
   color: #005f73;
-  font-size: 24px; /* Slightly larger for visibility */
+  font-size: 36px; /* Slightly larger for visibility */
   margin-bottom: 20px;
 }
 
 .form-container {
-  width: 50%; /* Adjusted width for better layout on desktop */
+  width: 60%; /* Adjusted width for better layout on desktop */
   padding: 20px;
   background: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -40,7 +40,7 @@ h1 {
 }
 
 input, button {
-  width: 100%;
+  width: 80%;
   padding: 8px;
   margin: 10px 0;
   border: 1px solid #ccc;
@@ -65,7 +65,7 @@ button:hover {
 
 <div class="form-container">
   <h1>Making a change starts with one conversation</h1>
-  <p>Fill in the form below to book a consultation with me.</p>
+  <p>Fill in the form below to delve into an awesome change.</p>
   <form id="bookingForm">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Enter your name">
@@ -74,9 +74,9 @@ button:hover {
     <input type="email" id="email" name="email" placeholder="Enter your email">
 
     <label for="phone">Phone number</label>
-    <input type="tel" id="phone" name="phone" placeholder="+1 (XXX) XXX XXXX">
+    <input type="tel" id="phone" name="phone" placeholder="(XXX) XXX XXXX">
 
-    <button type="submit">BOOK A CALL</button>
+    <button type="submit">SUBMIT</button>
   </form>
 </div>
 
@@ -90,7 +90,7 @@ document.getElementById('bookingForm').onsubmit = function(event) {
   };
   console.log(data); // Here you'd typically send this data to your server via AJAX
   // Simulate redirection
-  window.location.href = 'index.html';
+  window.location.href = 'index2.html';
 };
 </script>
 
