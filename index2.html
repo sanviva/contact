@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Consultation - Sanviva</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.form-container {
+  width: 40%;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+input, button {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #005f73;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0077b6;
+}
+
+.right-panel {
+  width: 50%;
+  background-image: url('https://raw.githubusercontent.com/sanviva/contact/main/Sanviva_Logo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 20px;
+  height: 80px; /* Adjust as needed */
+}
+
+.logo-text {
+  text-align: center;
+  color: #005f73;
+  font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+<div class="form-container">
+  <h1>Making a change starts with one conversation</h1>
+  <p>Fill in the form below to book a consultation with me.</p>
+  <form id="bookingForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+    <label for="phone">Phone number</label>
+    <input type="tel" id="phone" name="phone" placeholder="+1 (XXX) XXX XXXX">
+
+    <button type="submit">BOOK A CALL</button>
+  </form>
+</div>
+<div class="right-panel">
+  <img src="https://raw.githubusercontent.com/sanviva/contact/main/Sanviva_Logo.png" alt="Sanviva Logo" class="logo">
+  <div class="logo-text">Sanviva</div>
+</div>
+
+<script>
+document.getElementById('bookingForm').onsubmit = function(event) {
+  event.preventDefault();
+  var data = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value
+  };
+  console.log(data); // Here you'd typically send this data to your server via AJAX
+  // Simulate redirection
+  window.location.href = 'index.html';
+};
+</script>
+
+</body>
+</html>
